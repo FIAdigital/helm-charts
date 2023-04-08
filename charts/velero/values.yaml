@@ -277,7 +277,7 @@ configuration:
 
   # Parameters for the `default` VolumeSnapshotLocation. See
   # https://velero.io/docs/v1.6/api-types/volumesnapshotlocation/
-  volumeSnapshotLocation: {}
+  volumeSnapshotLocation:
     # name is the name of the volume snapshot location where snapshots are being taken. Required.
     # name:
     # provider is the name for the volume snapshot provider. If omitted
