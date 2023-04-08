@@ -279,13 +279,13 @@ configuration:
   # https://velero.io/docs/v1.6/api-types/volumesnapshotlocation/
   volumeSnapshotLocation:
     # name is the name of the volume snapshot location where snapshots are being taken. Required.
-    # name:
+    name:
     # provider is the name for the volume snapshot provider. If omitted
     # `configuration.provider` will be used instead.
-    # provider:
+    provider:
     # Additional provider-specific configuration. See link above
     # for details of required/optional fields for your provider.
-    # config: {}
+    config: {}
   #    region:
   #    apiTimeout:
   #    resourceGroup:
