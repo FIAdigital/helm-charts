@@ -252,7 +252,7 @@ configuration:
     # prefix is the directory under which all Velero data should be stored within the bucket. Optional.
     prefix:
     # default indicates this location is the default backup storage location. Optional.
-    default:
+    default: true
     # accessMode determines if velero can write to this backup storage location. Optional.
     # default to ReadWrite, ReadOnly is used during migrations and restores.
     accessMode: ReadWrite
@@ -277,15 +277,15 @@ configuration:
 
   # Parameters for the `default` VolumeSnapshotLocation. See
   # https://velero.io/docs/v1.6/api-types/volumesnapshotlocation/
-  volumeSnapshotLocation:
+  volumeSnapshotLocation: {}
     # name is the name of the volume snapshot location where snapshots are being taken. Required.
-    name:
+    # name:
     # provider is the name for the volume snapshot provider. If omitted
     # `configuration.provider` will be used instead.
-    provider:
+    # provider:
     # Additional provider-specific configuration. See link above
     # for details of required/optional fields for your provider.
-    config: {}
+    # config: {}
   #    region:
   #    apiTimeout:
   #    resourceGroup:
