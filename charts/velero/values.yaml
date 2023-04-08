@@ -42,8 +42,8 @@ resources:
     cpu: 500m
     memory: 128Mi
   limits:
-    cpu: 7000m
-    memory: 512Mi
+    cpu: 700m
+    memory: 1Gi
 
 # Configure the dnsPolicy of the Velero deployment
 # See: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#pod-s-dns-policy
@@ -430,11 +430,11 @@ nodeAgent:
   # https://velero.io/docs/v1.6/customize-installation/#customize-resource-requests-and-limits
   resources:
     requests:
-      cpu: 500m
+      cpu: 300m
       memory: 512Mi
     limits:
-      cpu: 1000m
-      memory: 1024Mi
+      cpu: 500m
+      memory: 1Gi
 
   # Tolerations to use for the node-agent daemonset. Optional.
   tolerations: []
